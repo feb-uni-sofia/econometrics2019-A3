@@ -1,1 +1,2 @@
-# econometrics2019-A3
+# Econometrics 2019 Problem set 3
+
