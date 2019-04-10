@@ -1,6 +1,6 @@
 
 ## Problem set 3
-## Problem 2
+## Problem 1
 
 ## a)
 xgrid <- seq(from = -6, to = 6, by =0.2)
