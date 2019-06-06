@@ -1,4 +1,3 @@
-
 ## Problem set 3
 ## Problem 1
 
@@ -67,3 +66,39 @@ qnorm(0.975)
 
 ## P(Y < ???) = 0.975
 qnorm(0.975, mean = 1, sd = sqrt(2))
+
+## h)
+## NOTE: the results below will be different
+## after every run of the rnorm function here
+## (we are selecting _random_ smaples)
+
+x <- rnorm(n = 10, 0, 1)
+y <- rnorm(n = 10, 1, sqrt(2))
+
+## i)
+mean(x)
+
+## j)
+tStat <- (mean(x) - 0) / sqrt(var(x) / 10)
+tStat
+
+## Critical values (95% significance level <=> 5% error probability)
+qt(0.025, df = 10 - 1)
+qt(0.975, df = 10 - 1)
+
+## Compare the value of the test-statistic
+## with the critical values
+## You reject the null hypothesis at the 95% significance
+## level if the test-statistic is greater than the upper
+## critical value or if it is less than the lower critical
+## value
+
+## Alternatively, you can use the t.test function
+## to perform the test
+t.test(x)
+
+## k)
+mean(y)
+
+## l)
+t.test(y)
